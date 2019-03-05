@@ -1,0 +1,16 @@
+<head>
+<title>Pig Latin Translator</title>
+
+<meta charset="utf-8"/>
+</head>
+<body>
+<p id="output"></p>
+<script>
+var originalWord = prompt("Type a word");
+var pigLatinAddon = "ay";
+var wordCharacters = originalWord.length;
+var newWord = document.createTextNode(originalWord.substr(1,wordCharacters) + originalWord.charAt(0) + pigLatinAddon);
+document.body.appendChild(newWord)
+</script>
+
+</body>
